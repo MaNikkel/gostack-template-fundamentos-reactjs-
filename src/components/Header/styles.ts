@@ -4,6 +4,18 @@ interface ContainerProps {
   size?: 'small' | 'large';
 }
 
+export const Nav = styled.nav`
+  a {
+    color: #ffffff;
+    opacity: 0.8;
+    &.active {
+      opacity: 1;
+      border-bottom: 3px solid #ff872c;
+      padding-bottom: 10px;
+    }
+  }
+`;
+
 export const Container = styled.div<ContainerProps>`
   background: #5636d3;
   padding: 30px 0;
